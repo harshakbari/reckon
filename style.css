@@ -8,13 +8,12 @@
     
     li {
         float: left;
-        border-left: 3px solid #99ccff;
-        border-right: 3px solid #99ccff;
+        border-left: 3px solid #7c8b8d;
+        border-right: 3px solid #7c8b8d;
         border-radius: 25px;
         width: 24.5%;
     }
-   
-   
+    
     li a:hover:not(.active) {
         background-color: #ffe6e6;
         border-radius: 25px;
@@ -87,10 +86,8 @@
     .testi-image img {
         border-radius: 50%;
         float: left;
-    }
-    
-    body {
-        background-image: url("image/New%20folder/background%20(2).jpg");
+        width: 250px;
+        height: 250px;
     }
     
     .table {
@@ -99,4 +96,18 @@
         width: 500;
         border: 0;
         cellpadding: 0;
+    }
+    
+    body {
+        background-image: url("image/background/background%20%20(2).jpg");
+    }
+    
+    .logo-bkg {
+        background-image: url("image/background/background%20%20(3).jpg");
+        height: 101px;
+    }
+    
+    .about-bkg {
+        background-image: url("image/background/background%20%20(5).jpg");
+        height: 355px;
     }
