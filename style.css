@@ -81,6 +81,7 @@
         color: #000000;
         font-style: oblique;
         text-decoration: underline;
+        margin: 0px;
     }
     
     .testi-image img {
@@ -91,23 +92,27 @@
     }
     
     .table {
-        align: center;
-        valign: center;
-        width: 500;
-        border: 0;
-        cellpadding: 0;
+        width: 100%;
     }
     
     body {
         background-image: url("image/background/background%20%20(2).jpg");
+        padding: 0px;
+        margin: 0px;
     }
     
     .logo-bkg {
-        background-image: url("image/background/background%20%20(3).jpg");
+        background-image: url("image/background/background%20%20(1).jpg");
         height: 101px;
     }
     
     .about-bkg {
-        background-image: url("image/background/background%20%20(5).jpg");
+        background-image: url("image/background/background%20%20(1).jpg");
         height: 355px;
+        vertical-align: middle;
+    }
+
+    .grid-img {
+        height: 200px;
+        width: 300px;
     }
