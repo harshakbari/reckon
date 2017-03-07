@@ -7,7 +7,7 @@
     <meta name="keywords" content="PVC Pipes And Fittings Distributor, Supplier, Trading Company, Apollo SWR Pipes & Fittings,Apollo CPVC Pipes & Fittings,Apollo UPVC Pipes & Fittings Reckon Pipes & Fittings, rajkot, India ">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0" /><img width='0' height='0' src='image/New%20folder/background%20(4).jpg'>
-    <link href="http-equivp://st.tradeindia.com/ver7635/css/catalog_common.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/lightgallery/dist/css/lightgallery.css" rel="stylesheet" type="text/css">
 </head>
 
 <head>
@@ -57,58 +57,38 @@
     </div>
 </body>
 <!-- about us end -->
-<!-- grid start -->
 
 <body>
-    <br/>
-    <h1>Product</h1>
-    <br/>
-    <table class="table">
-        <tr>
-            <td>
-                <img src="image/UPVC/BRASS FTA.jpg" class="grid-img">
-            </td>
-            <td>
-                <img src="image/UPVC/BRASS TEE.jpg" class="grid-img">
-                <td>
-                    <img src="image/UPVC/COUPLER.JPG" class="grid-img">
-                </td>
-                <td>
-                    <img src="image/UPVC/END PLUG.jpg" class="grid-img">
-                </td>
-        </tr>
-    </table>
-    <table class="table">
-        <tr>
-            <td>
-                <img src="image/UPVC/STEP%20OVER%20BEND.jpg" class="grid-img">
-            </td>
-            <td>
-                <img src="image/UPVC/REDUCER%20BUSH.jpg"" class="grid-img">
-                <td>
-                    <img src="image/UPVC/REDUCER%20ELBOW.jpg"" class="grid-img">
-                </td>
-                <td>
-                    <img src="image/UPVC/UNION.JPG"" class="grid-img">
-                </td>
-        </tr>
-    </table>
-    <table class="table">
-        <tr>
-            <td>
-                <img src="image/UPVC/UPVC%20SOLVENT%20CEMENT.jpg"" class="grid-img">
-            </td>
-            <td>
-                <img src="image/UPVC/BALL%20VALVE.jpg"" class="grid-img">
-                <td>
-                    <img src="image/UPVC/BRASS%20ELBOW.jpg"" class="grid-img">
-                </td>
-                <td>
-                    <img src="image/UPVC/UPVC%20PIPES%20.jpg"" class="grid-img">
-                </td>
-        </tr>
-    </table>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/lightgallery/dist/js/lightgallery.min.js"></script>
+    <!-- lightgallery plugins -->
+    <script src="bower_components/lightgallery/demo/js/lg-thumbnail.min.js "></script>
+    <script src="bower_components/lightgallery/demo/js/lg-fullscreen.min.js"></script>
 </body>
-<!-- grid end -->
+
+<body>
+    <div id="responsive-images">
+        <a href="image/CPVC/BRASS%20FTA.jpg">
+            <img src="image/CPVC/BRASS%20FTA.jpg" class="grid-img" />
+        </a>
+        <a href="image/CPVC/BRASS%20FTA.jpg">
+            <img src="image/CPVC/BRASS%20FTA.jpg" class="grid-img" />
+        </a>
+        <a href="image/CPVC/BRASS%20FTA.jpg">
+            <img src="image/CPVC/BRASS%20FTA.jpg" class="grid-img" />
+        </a>
+        <a href="image/CPVC/BRASS%20FTA.jpg">
+            <img src="image/CPVC/BRASS%20FTA.jpg" class="grid-img" />
+        </a>
+    </div>
+</body>
+<script type="text/javascript">
+$('#responsive-images').lightGallery();
+
+var colours = ['#21171A', '#81575E', '#9C5043', '#8F655D'];
+$customEvents.on('onBeforeSlide.lg', function(event, prevIndex, index) {
+    $('.lg-outer').css('background-color', colours[index])
+});
+</script>
 
 </html>
