@@ -72,8 +72,8 @@
     
     p.f1 {
         font: italic bold 18px/30px serif;
-        text-align: left;
-        margin-left: 30%;
+        text-align: center;
+        width: 100%;
     }
     
     h1 {
@@ -83,41 +83,29 @@
         text-decoration: underline;
         margin: 0px;
     }
-    
-    .testi-image img {
-        border-radius: 50%;
-        float: left;
-        width: 250px;
-        height: 250px;
-    }
-    
-    .table {
-        width: 100%;
-    }
-    
+            
     body {
-        background-image: url("image/background/background%20%20(2).jpg");
+        background-image: url("image/background/background%20(3).jpg");
         padding: 0px;
         margin: 0px;
     }
     
-    .logo-bkg {
-        background-image: url("image/background/background%20%20(1).jpg");
+    .logo {
+        background-image: url("image/background/background%20(2).jpg");
         height: 101px;
     }
     
     .about-bkg {
-        background-image: url("image/background/background%20%20(1).jpg");
         height: 355px;
         vertical-align: middle;
     }
-
+    
     .grid-img {
         height: 200px;
         width: 24.7%;
-        padding-right: 0px; 
+        padding-right: 0px;
     }
-
-    .lg-outer{
-    transition: background-color 600ms ease 0s;
-}
+    
+    .lg-outer {
+        transition: background-color 600ms ease 0s;
+    }
