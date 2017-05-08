@@ -71,7 +71,8 @@
     }
     
     p.f1 {
-        font: italic bold 18px/30px serif;
+        font: italic bold serif;
+        font-size: 30px;
         text-align: center;
         width: 100%;
     }
@@ -83,7 +84,7 @@
         text-decoration: underline;
         margin: 0px;
     }
-            
+    
     body {
         background-image: url("image/background/background%20(3).jpg");
         padding: 0px;
@@ -108,4 +109,38 @@
     
     .lg-outer {
         transition: background-color 600ms ease 0s;
+    }
+    
+    .about-pg {
+        font-size: 30px;
+    }
+
+    /* two column layout CSS */
+
+    .modal-content {
+        height: 100%;
+    }
+    .container {
+        clear: left;
+        float: left;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+        text-align: center;
+    }
+    .col1, .col2 {  
+        position: relative;
+        height: 100%;
+        width: 50%;
+    }
+    .col1 {
+        float: left;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    .col2 {
+        float: right;
+        background: green;
     }
