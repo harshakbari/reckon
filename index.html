@@ -1,52 +1,51 @@
-<!DOCTYPE   html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE>
 <html>
 
 <head>
+    <script src="https://use.fontawesome.com/623a48d7e3.js"></script>
     <title>UPVC Pipes And Fittings Distributor, Supplier, Trading Company, UPVC Pipes And Fittings India</title>
     <meta name="description" content="Reckon Pipes & Fittings - Distributor, Supplier, Trading Company of PVC Pipes And Fittings Apollo SWR Pipes & Fittings,Apollo CPVC Pipes & Fittings,Apollo UPVC Pipes & Fittings, India ">
     <meta name="keywords" content="PVC Pipes And Fittings Distributor, Supplier, Trading Company, Apollo SWR Pipes & Fittings,Apollo CPVC Pipes & Fittings,Apollo UPVC Pipes & Fittings Reckon Pipes & Fittings, rajkot, India ">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" /><img width='0' height='0' src='image/New%20folder/background%20(4).jpg'>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-</head>
-
-<head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/animatedModal.min.js"></script>
 </head>
-<!-- Logo
- ============================================= -->
-<div class="logo">
-    <img src="image/Reckon.png" alt="HTML5 Icon" style="width:350px;height:100px;">
-</div>
-<!-- #logo end -->
-<!-- Primary Navigation
- ============================================= -->
 
 <body>
-    <ul>
-        <li class="active"><a href="#Home">Home</a></li>
-        <li class="dropdown">
-            <a href="#product" class="dropbtn">product</a>
-            <div class="dropdown-content">
-                <a href="#">Pipes</a>
-                <a href="#">Fittings</a>
-            </div>
-            <li><a href="#abt">About us</a></li>
+    <div class="navbar">
+        <!-- Logo
+ ============================================= -->
+        <div class="logo">
+            <img src="image/Reckon.png" alt="HTML5 Icon" style="width:350px;height:100px;">
+        </div>
+        <!-- #logo end -->
+        <!-- Primary Navigation
+ ============================================= -->
+        <ul>
+            <li class="active"><a href="#Home">Home</a></li>
             <li class="dropdown">
-                <a href="#contect us" class="dropbtn">Contect us</a>
+                <a href="#product" class="dropbtn">product</a>
                 <div class="dropdown-content">
-                    <a href="#contect">contect</a>
-                    <a href="#mail">mail</a>
-                    <a href="#address">address</a>
+                    <a href="#">Pipes</a>
+                    <a href="#">Fittings</a>
                 </div>
-            </li>
-    </ul>
-</body>
-<!-- Primary Navigation end-->
-<!-- about us start 
+                <li><a href="#abt">About us</a></li>
+                <li class="dropdown">
+                    <a href="#contect us" class="dropbtn">Contect us</a>
+                    <div class="dropdown-content">
+                        <a href="#contect">contect</a>
+                        <a href="#mail">mail</a>
+                        <a href="#address">address</a>
+                    </div>
+                </li>
+        </ul>
+    </div>
+    <!-- Primary Navigation end-->
+    <!-- about us start 
 ============================================-->
-
-<body>
     <div class="about-bkg">
         <br/>
         <h1>Reckon Pipes&Fittings</h1>
@@ -69,37 +68,52 @@
             <br/>
             <br/>
     </div>
-</body>
-<!-- about us end -->
-
-<body>
+    <!-- about us end -->
     <!--Call your modal-->
     <a id="demo01" href="#animatedModal"> <img src="image/CPVC/BRASS_20FTA.jpg" class="grid-img" /></a>
     <!--DEMO01-->
     <div id="animatedModal">
         <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
         <div class="close-animatedModal">
-            CLOSE
+            <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <div class="modal-content">
-        <div class="container">
-        <div class="col1">
-         <img src="image/CPVC/BRASS_20FTA.jpg" />
-        </div>
-        <div class="col2">
-         <p>BRASS FTA</p>
-        </div>
-        </div>
+            <div class="container">
+                <div class="col1">
+                    <img src="image/CPVC/BRASS_20FTA.jpg" />
+                </div>
+                <div class="col2">
+                    <h2> BRASS FTA</h2>
+                    <div>
+                        <form id="product-form" method="post">
+                            <input class="ftext input-group" type="text" id="fname" name="name" placeholder="Your name.." />
+                            <input class="ftext input-group" type="number" id="lname" name="phone" placeholder="Your contect number.." required/>
+                            <div>
+                                <input class="ftext input-group" type="email" id="Email" name="email" placeholder="Your Mail Id.." required/>
+                            </div>
+                            <br>
+                            <input class="fsubmit" type="submit" value="I AM INTRUSTED" />
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</body>
-
-<body>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/animatedModal.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/additional-methods.min.js"></script>
 </body>
 <script>
 $("#demo01").animatedModal();
+</script>
+<script>
+$("#product-form").validate({
+    errorPlacement: function(error, element) {
+        error.appendTo(element.parent("form").prev("input"));
+    },
+    debug: true
+}
+}
+});
 </script>
 
 </html>

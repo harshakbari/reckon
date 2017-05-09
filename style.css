@@ -3,20 +3,19 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #00cc00;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        display: flex;
     }
     
     li {
         float: left;
         border-left: 3px solid #7c8b8d;
-        border-right: 3px solid #7c8b8d;
-        border-radius: 25px;
-        width: 24.5%;
     }
     
     li a:hover:not(.active) {
-        background-color: #ffe6e6;
-        border-radius: 25px;
+        background-color: #636b76;
     }
     
     li a,
@@ -28,12 +27,11 @@
         text-decoration: none;
         font-size: 22px;
         font-style: italic;
-        width: 90%;
     }
     
     li a:hover,
     .dropdown:hover .dropbtn {
-        background-color: #e63900;
+        background-color: #636b76;
     }
     
     li.dropdown {
@@ -67,7 +65,7 @@
     }
     
     .active {
-        background-color: #00b300;
+        background-color: #30476e;
     }
     
     p.f1 {
@@ -92,7 +90,6 @@
     }
     
     .logo {
-        background-image: url("image/background/background%20(2).jpg");
         height: 101px;
     }
     
@@ -107,19 +104,16 @@
         padding-right: 0px;
     }
     
-    .lg-outer {
-        transition: background-color 600ms ease 0s;
-    }
-    
     .about-pg {
         font-size: 30px;
     }
-
     /* two column layout CSS */
-
+    
     .modal-content {
         height: 100%;
+        background-color: white;
     }
+    
     .container {
         clear: left;
         float: left;
@@ -129,18 +123,61 @@
         height: 100%;
         text-align: center;
     }
-    .col1, .col2 {  
+    
+    .col1,
+    .col2 {
         position: relative;
         height: 100%;
         width: 50%;
     }
+    
     .col1 {
         float: left;
-        display: flex; 
+        display: flex;
         justify-content: center;
         align-items: center;
     }
+    
     .col2 {
         float: right;
-        background: green;
+    }
+    
+    .navbar {
+        position: relative;
+        display: flex;
+        border-bottom: 1px solid;
+    }
+    
+    .ftext {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    .fsubmit {
+        width: 20%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .fsubmit:hover {
+        background-color: #45a049;
+    }
+    
+    .close-animatedModal {
+        float: right;
+    }
+    
+    .error {
+        display: block;
+        margin: auto;
     }
