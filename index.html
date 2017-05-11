@@ -24,10 +24,10 @@
         <!-- #logo end -->
         <!-- Primary Navigation
  ============================================= -->
-        <ul>
+        <ul class="navbar-border">
             <li class="active"><a href="#Home">Home</a></li>
             <li class="dropdown">
-                <a href="#product" class="dropbtn">product</a>
+                <a href="#product" class="dropbtn">Product</a>
                 <div class="dropdown-content">
                     <a href="#">Pipes</a>
                     <a href="#">Fittings</a>
@@ -36,9 +36,9 @@
                 <li class="dropdown">
                     <a href="#contect us" class="dropbtn">Contect us</a>
                     <div class="dropdown-content">
-                        <a href="#contect">contect</a>
-                        <a href="#mail">mail</a>
-                        <a href="#address">address</a>
+                        <a href="#contect">Contect</a>
+                        <a href="#mail">Mail</a>
+                        <a href="#address">Address</a>
                     </div>
                 </li>
         </ul>
@@ -48,12 +48,12 @@
 ============================================-->
     <div class="about-bkg">
         <br/>
-        <h1>Reckon Pipes&Fittings</h1>
+        <h1>RECKON PIPES&FITTING</h1>
         <P class="f1">Incepted in the year 2012, at Rajkot (Gujarat, India), we “Reckon Pipes And Fittings” are a Partnership firm that is the distinguished manufacturer of high quality and durable range of UPVC Pipes & Fittings, CPVC Pipes & Fittings Offered assortment is immensely appreciated for features like durability, easy installation, high strength, sturdiness and flawless finish. Under the supervision of “Mr. Chirag Patel” (Partner), we have gained a reputed name in this domain. </P>
     </div>
     <div>
         <br/>
-        <h1 id="abt">About us</h1>
+        <h1 id="abt">ABOUT US</h1>
         <p class="about-pg">Reckon Pipes & Fittings has achieved a remarkable success in a very short span because of its quality and services to the out most satisfaction of the customers.
             <br/>
             <br/> Reckon Pipes & Fittings has a significant presence in the industry as it has made an optimum use of its resources by applying aggressive marketing strategies.
@@ -69,6 +69,27 @@
             <br/>
     </div>
     <!-- about us end -->
+    <!-- why us -->
+    <h1>WHY US</h1>
+    <p class="why-us-per">As leading plastic pipes manufacturers in India we undergo incessant improvement in the work process for achieving maximum customer satisfaction. Some of the key features that make us the preferred choice over our competitors are:
+    </p>
+    </br>
+    </br>
+    <ul class="prd1_mn">
+        <li>Skilled team of professionals</li>
+        <li>Pool of efficient engineers adept with the latest technologies.</li>
+        <li>Ethical business policies</li>
+        <li>Empowered with strong market network</li>
+        <li>Well-built infrastructure base</li>
+        <li>Easy payment modes</li>
+        <li>Reasonable prices</li>
+        <li>Timely delivery</li>
+    </ul>
+    </br>
+    <!-- why us end -->
+    <!-- product -->
+    <h1>PRODUCT</h1></br>
+    </br>
     <!--Call your modal-->
     <a id="demo01" href="#animatedModal"> <img src="image/CPVC/BRASS_20FTA.jpg" class="grid-img" /></a>
     <!--DEMO01-->
@@ -85,7 +106,7 @@
                 <div class="col2">
                     <h2> BRASS FTA</h2>
                     <div>
-                        <form id="product-form" method="post">
+                        <form id="product-form" method="post" action="thank-you.php">
                             <input class="ftext input-group" type="text" id="fname" name="name" placeholder="Your name.." />
                             <input class="ftext input-group" type="number" id="lname" name="phone" placeholder="Your contect number.." required/>
                             <div>
@@ -106,14 +127,13 @@
 $("#demo01").animatedModal();
 </script>
 <script>
-$("#product-form").validate({
-    errorPlacement: function(error, element) {
-        error.appendTo(element.parent("form").prev("input"));
-    },
-    debug: true
-}
-}
-});
+// $("#product-form").validate({
+//     errorPlacement: function(error, element) {
+//         error.appendTo(element.parent("form").prev("input"));
+//     },
+//     debug: true
+// }
+// });
 </script>
 
 </html>

@@ -1,183 +1,205 @@
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        width: 100%;
-        justify-content: flex-end;
-        align-items: center;
-        display: flex;
-    }
-    
-    li {
-        float: left;
-        border-left: 3px solid #7c8b8d;
-    }
-    
-    li a:hover:not(.active) {
-        background-color: #636b76;
-    }
-    
-    li a,
-    .dropbtn {
-        display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 22px;
-        font-style: italic;
-    }
-    
-    li a:hover,
-    .dropdown:hover .dropbtn {
-        background-color: #636b76;
-    }
-    
-    li.dropdown {
-        display: inline-block;
-    }
-    
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-    }
-    
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-        width: 80%;
-    }
-    
-    .dropdown-content a:hover {
-        background-color: #f1f1f1;
-    }
-    
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    
-    .active {
-        background-color: #30476e;
-    }
-    
-    p.f1 {
-        font: italic bold serif;
-        font-size: 30px;
-        text-align: center;
-        width: 100%;
-    }
-    
-    h1 {
-        text-align: center;
-        color: #000000;
-        font-style: oblique;
-        text-decoration: underline;
-        margin: 0px;
-    }
-    
-    body {
-        background-image: url("image/background/background%20(3).jpg");
-        padding: 0px;
-        margin: 0px;
-    }
-    
-    .logo {
-        height: 101px;
-    }
-    
-    .about-bkg {
-        height: 355px;
-        vertical-align: middle;
-    }
-    
-    .grid-img {
-        height: 200px;
-        width: 24.7%;
-        padding-right: 0px;
-    }
-    
-    .about-pg {
-        font-size: 30px;
-    }
-    /* two column layout CSS */
-    
-    .modal-content {
-        height: 100%;
-        background-color: white;
-    }
-    
-    .container {
-        clear: left;
-        float: left;
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-        height: 100%;
-        text-align: center;
-    }
-    
-    .col1,
-    .col2 {
-        position: relative;
-        height: 100%;
-        width: 50%;
-    }
-    
-    .col1 {
-        float: left;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .col2 {
-        float: right;
-    }
-    
-    .navbar {
-        position: relative;
-        display: flex;
-        border-bottom: 1px solid;
-    }
-    
-    .ftext {
-        width: 50%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-    
-    .fsubmit {
-        width: 20%;
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    
-    .fsubmit:hover {
-        background-color: #45a049;
-    }
-    
-    .close-animatedModal {
-        float: right;
-    }
-    
-    .error {
-        display: block;
-        margin: auto;
-    }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-border {
+    display: flex;
+    overflow: hidden;
+}
+
+.navbar-border li {
+    float: left;
+    border-left: 3px solid #7c8b8d;
+}
+
+li a:hover:not(.active) {
+    background-color: #636b76;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    font-style: italic;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #636b76;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 80%;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.active {
+    background-color: #30476e;
+}
+
+p.f1 {
+    font: italic bold serif;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    text-decoration: underline;
+    margin: 0px;
+}
+
+body {
+    background-image: url("image/background/background%20(3).jpg");
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo {
+    height: 101px;
+}
+
+.about-bkg {
+    height: 355px;
+    vertical-align: middle;
+}
+
+.grid-img {
+    height: 200px;
+    width: 24.7%;
+    padding-right: 0px;
+}
+
+.about-pg {
+    font-size: 25px;
+}
+
+
+/* two column layout CSS */
+
+.modal-content {
+    height: 100%;
+    background-color: white;
+}
+
+.container {
+    clear: left;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    text-align: center;
+}
+
+.col1,
+.col2 {
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+
+.col1 {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col2 {
+    float: right;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid;
+}
+
+.ftext {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.fsubmit {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.fsubmit:hover {
+    background-color: #45a049;
+}
+
+.close-animatedModal {
+    float: right;
+}
+
+.error {
+    display: block;
+    margin: auto;
+}
+
+.why-us {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.prd1_mn {
+    list-style: disc!important;
+    float: none;
+    margin: 5px 0 0 30px;
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+.why-us-per {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: 26px;
+}
